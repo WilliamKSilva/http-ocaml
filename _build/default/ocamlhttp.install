@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/ocamlhttp/META"
+  "_build/install/default/lib/ocamlhttp/dune-package"
+  "_build/install/default/lib/ocamlhttp/opam"
+]
+bin: [
+  "_build/install/default/bin/ocamlhttp"
+]
