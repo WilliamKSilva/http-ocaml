@@ -2,6 +2,8 @@ open Unix
 
 type socket = { addr : Unix.sockaddr; file_descr : Unix.file_descr }
 
+(* I want to make all this code based on options to deal with the errors possibility   *)
+
 let socket_create addr port =
   let file_descr = Unix.socket PF_INET SOCK_STREAM 0 in
   let address = Unix.ADDR_INET (Unix.inet_addr_of_string addr, port) in
